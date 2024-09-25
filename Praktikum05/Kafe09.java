@@ -1,4 +1,3 @@
-package Praktikum05;
 
 import java.util.Scanner;
 
