@@ -1,7 +1,7 @@
 
 import java.util.Scanner;
 
-public class PemilihanHariDenganIf {
+public class PemilihanHariDenganIf09 {
 
     public static void main(String[] args) {
 
