@@ -15,10 +15,9 @@ public class PemilihanHariDenganIf {
         } else if (angka == 6 || angka == 7) {
             System.out.println("weekend");
         } else {
-            System.out.println("invalid Number");
+            System.out.println(" invalid Number ");
 
         }
-
         sc.close();
 
     }
