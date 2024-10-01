@@ -7,7 +7,6 @@ public class Kafe09 {
         Scanner sc = new Scanner(System.in);
 
         String menu;
-        char ukuranCup;
         int jumlah;
         boolean keanggotaan;
 
@@ -15,7 +14,7 @@ public class Kafe09 {
         menu = sc.nextLine();
 
         System.out.println("Masukkan ukuran cup: ");
-        ukuranCup = sc.next().charAt(0);
+        char ukuranCup = sc.next().charAt(0);
 
         System.out.println("Masukkan jumlah: ");
         jumlah = sc.nextInt();

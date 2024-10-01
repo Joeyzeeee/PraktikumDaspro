@@ -1,4 +1,5 @@
 // Latihan09
+package Praktikum01;
 
 public class Latihan09 {
 
