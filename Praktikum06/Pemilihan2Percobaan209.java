@@ -29,10 +29,10 @@ public class Pemilihan2Percobaan209 {
         jenisPembayaran = input09.nextLine();
         System.out.println("--------------------------------------");
 
-        if (member.equalsIgnoreCase("y")) {
+        if (member.equals("y")) {
             diskon = 0.10;
             System.out.println("Besar diskon = 10%");
-        } else if (member.equalsIgnoreCase("n")) {
+        } else if (member.equals("n")) {
             diskon = 0;
             System.out.println("Besar diskon = 0%");
         } else {
@@ -58,7 +58,7 @@ public class Pemilihan2Percobaan209 {
 
         totalBayar = harga - (harga * diskon);
 
-        if (jenisPembayaran.equalsIgnoreCase("QRIS")) {
+        if (jenisPembayaran.equals("QRIS")) {
             totalBayar -= potonganQRIS;
             System.out.println("Pembayaran menggunakan QRIS, potongan Rp.1.000 diterapkan.");
         }
