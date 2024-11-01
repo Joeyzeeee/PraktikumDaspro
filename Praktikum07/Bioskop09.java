@@ -38,7 +38,7 @@ public class Bioskop09 {
             totalTiketTerjual += jumlahTiket;
             totalPendapatan += totalHarga;
 
-            System.out.println("Total harga untuk " + jumlahTiket + " tiket : " + jumlahTiket + totalHarga);
+            System.out.println("Total harga untuk " + jumlahTiket + " tiket : " + jumlahTiket * hargaTiket);
         }
 
         System.out.println("==== Rekap penjualan hari ini ====");

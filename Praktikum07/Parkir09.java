@@ -41,7 +41,7 @@ public class Parkir09 {
             }
 
             double tarif;
-            if (durasi > 5) {
+            if (durasi >= 5) {
                 tarif = tarifTetap;
             } else {
                 if (jenisKendaraan == 1) {
