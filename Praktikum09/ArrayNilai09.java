@@ -10,13 +10,17 @@ public class ArrayNilai09 {
 
         int[] nilaiAkhir = new int[10];
 
-        for (int i = 0; i < 10; i++) {
+        for (int i = 0; i < nilaiAkhir.length; i++) {
             System.out.print("Masukkan nilai akhir ke-" + i + " : ");
             nilaiAkhir[i] = input09.nextInt();
         }
 
-        for (int i = 0; i < 10; i++) {
-            System.out.println("Nilai akhir ke-" + i + " adalah " + nilaiAkhir[i]);
+        for (int i = 0; i < nilaiAkhir.length; i++) {
+            if (nilaiAkhir[i] > 70) {
+                System.out.println("Mahasiswa ke-" + i + " lulus!!");
+            } else if (nilaiAkhir[i] < 70) {
+                System.out.println("Mahasiswa ke-" + i + " tidak lulus!!");
+            }
 
         }
         input09.close();
