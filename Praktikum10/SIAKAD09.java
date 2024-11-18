@@ -8,7 +8,12 @@ public class SIAKAD09 {
 
         Scanner input09 = new Scanner(System.in);
 
-        int[][] nilai = new int[4][3];
+        System.out.println("Masukkan jumlah baris : ");
+        int baris = input09.nextInt();
+        System.out.println("Masukkan jumlah kolom : ");
+        int kolom = input09.nextInt();
+
+        int[][] nilai = new int[baris][kolom];
 
         for (int i = 0; i < nilai.length; i++) {
             System.out.println("Input nilai mahasiswa ke-" + (i + 1));
@@ -20,20 +25,20 @@ public class SIAKAD09 {
                 totalPerSiswa += nilai[i][j];
             }
 
-            System.out.println("Nilai rata-rata: " + totalPerSiswa / 3);
+            System.out.println("Nilai rata-rata: " + totalPerSiswa / kolom);
 
         }
         System.out.println("");
         System.out.println("=======================");
         System.out.println("Rata-rata Nilai setiap Mata Kuliah:");
 
-        for (int j = 0; j < 3; j++) {
+        for (int j = 0; j < kolom; j++) {
             double totalPerMatkul = 0;
 
-            for (int i = 0; i < 4; i++) {
+            for (int i = 0; i < baris; i++) {
                 totalPerMatkul += nilai[i][j];
             }
-            System.out.println("Nilai Mata kuliah " + (j + 1) + ": " + totalPerMatkul / 4);
+            System.out.println("Nilai Mata kuliah " + (j + 1) + ": " + totalPerMatkul / baris);
 
         }
         input09.close();
